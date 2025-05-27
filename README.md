@@ -19,7 +19,9 @@ VCS (Version Control Systems) sind Systeme die für die Erfassung und Aufzeichnu
 
     Die Working Directory ist der Speicherort der aktuellen Versionen, deiner Dateien. Dein lokales Repository.
 
-* __Staging area__
+* __Staging Area__
+
+    Die Staging Area ist ein Bereich von Git wo drin gespeichert wird welche Dateien beim nächsten commit mit einbezogen werden.
 
 * __Historie__
 
