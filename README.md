@@ -13,12 +13,14 @@
 	Bei git clone wird eine Kopie eines remote Repositorys lokal erstellt. Um es zu *betreten* braucht es noch den git checkout Befehl. 
 
 ## Inspizieren
+- git log
+	Der Befehl git Log zeigt die Commit-History des aktuellen Branches. Jeder Eintrag enthält die Commit Nachricht, Hash-Wert, Autor*in und Datum.
+- git status
+	Bei git status erhält man einen Überblick über das aktuelle Working Directory und den Staging-Bereich. Man sieht welche Changes gestaged sind und welche Dateien nicht.
 
 ## Stagen und Arbeiten
-
 - git add 
 	fügt Änderungen an Dateien zur Staging-Area hinzu, damit sie im nächsten Commit erfasst werden.
-
 - git reset
 	fügt Änderungen an Dateien zur Staging-Area hinzu, damit sie im nächsten Commit erfasst werden. Es 	bereitet die Änderungen zum Speichern im Repository vor.
 
@@ -29,7 +31,16 @@
 	entfernt Dateien aus dem Arbeitsverzeichnis und der Staging-Area, sodass sie beim nächsten Commit gelöscht 	werden.
 
 ## Versionen und Branches
-	fügt Änderungen an Dateien zur Staging-Area hinzu, damit sie im nächsten Commit erfasst werden. 
+- git branch
+
+- git checkout
+
+- git merge
+
+- git rebase
+
+- git cherry-pick
+
 ## Sharing und Updaten
 
 - git push
