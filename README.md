@@ -37,9 +37,12 @@
 	Wechselt zu einem anderen Branch oder bestimmten Commit. Man muss entweder den Hash oder einen Branchnamen angeben.
 - git merge
 	Bei git merge <branch> wird ein Merge des angegebenen Branches in den aktuellen Branch durchgeführt. 
+
 - git rebase
+	integriert Änderungen eines Branches, indem es dessen Commits auf einen neuen Ausgangspunkt umsetzt. Dadurch wird die Projektgeschichte geglättet und übersichtlicher, ohne einen Merge-Commit zu erzeugen.
 
 - git cherry-pick
+	übernimmt einen bestimmten Commit aus einem anderen Branch und fügt ihn in den aktuellen Branch ein. Dabei wird nur dieser eine Commit angewendet, ohne den ganzen Branch zu mergen.
 
 ## Sharing und Updaten
 
