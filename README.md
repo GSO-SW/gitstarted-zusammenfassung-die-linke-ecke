@@ -21,17 +21,15 @@
 ## Stagen und Arbeiten
 
 ## Versionen und Branches
-- git branch
-
+- git branch <name>
+	Mit git branch <name> wird ein neuer Branch mit dem angegebenen Namen erstellt. Dabei bleibt man im aktuellen Branch. Um zum neuen Branch zu wechseln muss man separat git checkout benutzen.
 - git checkout
-
+	Wechselt zu einem anderen Branch oder bestimmten Commit. Man muss entweder den Hash oder einen Branchnamen angeben.
 - git merge
-
+	Bei git merge <branch> wird ein Merge des angegebenen Branches in den aktuellen Branch durchgeführt. 
 - git rebase
 
 - git cherry-pick
-
-- git reset
 
 ## Sharing und Updaten
 
