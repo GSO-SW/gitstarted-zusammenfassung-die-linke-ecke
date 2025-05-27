@@ -21,6 +21,17 @@
 ## Stagen und Arbeiten
 
 ## Versionen und Branches
+- git branch
+
+- git checkout
+
+- git merge
+
+- git rebase
+
+- git cherry-pick
+
+- git reset
 
 ## Sharing und Updaten
 
