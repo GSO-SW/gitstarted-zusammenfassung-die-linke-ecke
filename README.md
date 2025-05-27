@@ -25,6 +25,8 @@ VCS (Version Control Systems) sind Systeme die für die Erfassung und Aufzeichnu
 
 * __Historie__
 
+    Die Historie ist die vollständige Aufzeichnung aller Änderungen der Dateien der jewailigen Branches.
+
 ## __Die wichtigsten Git Befehle__
 ## Setup eines Repositories
 - git init
