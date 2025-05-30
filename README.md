@@ -9,7 +9,15 @@ VCS (Version Control Systems) sind Systeme die für die Erfassung und Aufzeichnu
 
 * __Repositories__
 
-    Ein Git Repository ist ein Speicherort, an dem der Quellcode eines Projekts sowie alle Änderungen und deren Historie gespeichert werden. Es dient als Werkzeug zur Versionskontrolle, mit dem Entwickler Änderungen am Code verfolgen, verwalten und gemeinsam bearbeiten können.
+	Ein Git Repository ist ein Speicherort, an dem der Quellcode eines Projekts sowie alle Änderungen und deren Historie gespeichert werden. Es dient als Werkzeug zur Versionskontrolle, mit dem Entwickler Änderungen am Code verfolgen, verwalten und gemeinsam bearbeiten können.
+
+	* __Lokal__
+
+    	Ein lokales Git Repository ist ein speicherort auf deinem eigenem Computer mit Historie, Commits, etc. unabhängig vom Internet.
+
+	* __Remote__
+
+		Ein remote Git Repository ist ein Repository auf einem Server, wo Änderungen ausgetauscht und zusammengearbeitet werden kann.
    
 * __Branches__
 
