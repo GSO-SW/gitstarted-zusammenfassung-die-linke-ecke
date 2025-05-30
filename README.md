@@ -29,53 +29,74 @@ VCS (Version Control Systems) sind Systeme die für die Erfassung und Aufzeichnu
 
 ## __Die wichtigsten Git Befehle__
 ## Setup eines Repositories
-- git init
+- __git init__
+
 	Mit git init wird ein neues Repository im aktuellen Ordner erstellt. Es wird ein versteckter Ordner mit dem Namen .git erstellt.
-- git clone
+
+- __git clone__
+
 	Bei git clone wird eine Kopie eines remote Repositorys lokal erstellt. Um es zu *betreten* braucht es noch den git checkout Befehl. 
 
 ## Inspizieren
-- git log
+- __git log__
+
 	Der Befehl git Log zeigt die Commit-History des aktuellen Branches. Jeder Eintrag enthält die Commit Nachricht, Hash-Wert, Autor*in und Datum.
-- git status
+
+- __git status__
+
 	Bei git status erhält man einen Überblick über das aktuelle Working Directory und den Staging-Bereich. Man sieht welche Changes gestaged sind und welche Dateien nicht.
 
 ## Stagen und Arbeiten
-- git add 
-	fügt Änderungen an Dateien zur Staging-Area hinzu, damit sie im nächsten Commit erfasst werden.
-- git reset
-	fügt Änderungen an Dateien zur Staging-Area hinzu, damit sie im nächsten Commit erfasst werden. Es 	bereitet die Änderungen zum Speichern im Repository vor.
+- __git add__
 
-- git commit -m "Nachricht"
+	fügt Änderungen an Dateien zur Staging-Area hinzu, damit sie im nächsten Commit erfasst werden.
+
+- __git reset__
+
+	fügt Änderungen an Dateien zur Staging-Area hinzu, damit sie im nächsten Commit erfasst werden. Es bereitet die Änderungen zum Speichern im Repository vor.
+
+- __git commit -m "Nachricht"__
+
 	 speichert die in der Staging-Area vorbereiteten Änderungen dauerhaft im lokalen Repository.
 
-- git rm
+- __git rm__
+
 	entfernt Dateien aus dem Arbeitsverzeichnis und der Staging-Area, sodass sie beim nächsten Commit gelöscht 	werden.
 
 ## Versionen und Branches
-- git branch <name>
-	Mit git branch <name> wird ein neuer Branch mit dem angegebenen Namen erstellt. Dabei bleibt man im aktuellen Branch. Um zum neuen Branch zu wechseln muss man separat git checkout benutzen.
-- git checkout
-	Wechselt zu einem anderen Branch oder bestimmten Commit. Man muss entweder den Hash oder einen Branchnamen angeben.
-- git merge
-	Bei git merge <branch> wird ein Merge des angegebenen Branches in den aktuellen Branch durchgeführt. 
+- __git branch (Name)__
 
-- git rebase
+	Mit git branch (Name) wird ein neuer Branch mit dem angegebenen Namen erstellt. Dabei bleibt man im aktuellen Branch. Um zum neuen Branch zu wechseln muss man separat git checkout benutzen.
+
+- __git checkout__
+
+	Wechselt zu einem anderen Branch oder bestimmten Commit. Man muss entweder den Hash oder einen Branchnamen angeben.
+
+- __git merge__
+
+	Bei git merge (branch) wird ein Merge des angegebenen Branches in den aktuellen Branch durchgeführt. 
+
+- __git rebase__
+
 	integriert Änderungen eines Branches, indem es dessen Commits auf einen neuen Ausgangspunkt umsetzt. Dadurch wird die Projektgeschichte geglättet und übersichtlicher, ohne einen Merge-Commit zu erzeugen.
 
-- git cherry-pick
+- __git cherry-pick__
+
 	übernimmt einen bestimmten Commit aus einem anderen Branch und fügt ihn in den aktuellen Branch ein. Dabei wird nur dieser eine Commit angewendet, ohne den ganzen Branch zu mergen.
 
 ## Sharing und Updaten
 
-- git push
+- __git push__
+
 	überträgt Commits vom lokalen Repository in das Remote-Repository. Dadurch werden Änderungen für andere 	verfügbar gemacht.
 
 	- git push --set-upstream origing *branch*
 		verknüpft zusätzlich den lokalen Branch mit einem Remote-Branch. Damit merkt sich Git das Ziel für 			zukünftige Push- und Pull-Befehle.
 
-- git fetch
+- __git fetch__
+
 	holt alle Änderungen aus dem Remote-Repository, ohne sie in deinen aktuellen Branch zu übernehmen. Es 	aktualisiert nur die Referenzen zu den entfernten Branches.
 
-- git pull
+- __git pull__
+	
 	holt Änderungen aus dem Remote-Repository und führt sie sofort mit deinem aktuellen lokalen Branch 	zusammen. Es ist eine Kombination aus git fetch und git merge.
