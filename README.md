@@ -3,7 +3,7 @@
 
 ## Zu Git
 
-VCS (Version Control Systems) sind Systeme die für die Erfassung und Aufzeichnungen von Veränderungen (meißtens von Dateien) verantwortlich sind. Git ist ein VCS, welches schnelle und einfacher Verzweigung (Branching) und Zusammenführung dieser Zweige (Merging) erlaubt.
+VCS (Version Control Systems) sind Systeme die für die Erfassung und Aufzeichnungen von Veränderungen (meistens von Dateien) verantwortlich sind. Git ist ein VCS, welches schnelle und einfacher Verzweigung (Branching) und Zusammenführung dieser Zweige (Merging) erlaubt.
 
 ## Allgemeine Begriffe
 
@@ -25,7 +25,7 @@ VCS (Version Control Systems) sind Systeme die für die Erfassung und Aufzeichnu
 
 * __Historie__
 
-    Die Historie ist die vollständige Aufzeichnung aller Änderungen der Dateien der jewailigen Branches.
+    Die Historie ist die vollständige Aufzeichnung aller Änderungen der Dateien der jeweiligen Branches.
 
 ## __Die wichtigsten Git Befehle__
 ## Setup eines Repositories
@@ -49,19 +49,23 @@ VCS (Version Control Systems) sind Systeme die für die Erfassung und Aufzeichnu
 ## Stagen und Arbeiten
 - __git add__
 
-	fügt Änderungen an Dateien zur Staging-Area hinzu, damit sie im nächsten Commit erfasst werden.
+	Mit git add fügt man Änderungen an Dateien zur Staging-Area hinzu, damit sie im nächsten Commit erfasst werden.
 
 - __git reset__
 
-	fügt Änderungen an Dateien zur Staging-Area hinzu, damit sie im nächsten Commit erfasst werden. Es bereitet die Änderungen zum Speichern im Repository vor.
+	Bei git reset entfernt man Änderungen aus der Staging-Area oder setzt den aktuellen Branch-Zeiger zurück. Mit --soft, --mixed (default) oder --hard kann das Verhalten gesteuert werden.
 
 - __git commit -m "Nachricht"__
 
-	 speichert die in der Staging-Area vorbereiteten Änderungen dauerhaft im lokalen Repository.
+	 Git commit ist zum Speichern der in der Staging-Area vorbereiteten Änderungen im lokalen Repository.
 
 - __git rm__
 
-	entfernt Dateien aus dem Arbeitsverzeichnis und der Staging-Area, sodass sie beim nächsten Commit gelöscht 	werden.
+	Mit git rm kann man Dateien aus dem Arbeitsverzeichnis und der Staging-Area entfernen, sodass sie beim nächsten Commit gelöscht werden.
+
+- __.gitignore__
+
+	Die .gitignore-Datei legt fest, welche Dateien oder Ordner Git ignorieren soll. Das heißt, sie werden nicht zur Staging-Area hinzugefügt und somit auch nicht ins Repository übernommen.
 
 ## Versionen und Branches
 - __git branch (Name)__
@@ -88,15 +92,14 @@ VCS (Version Control Systems) sind Systeme die für die Erfassung und Aufzeichnu
 
 - __git push__
 
-	überträgt Commits vom lokalen Repository in das Remote-Repository. Dadurch werden Änderungen für andere 	verfügbar gemacht.
+	Mit git push werden Commits vom lokalen Repository in das Remote-Repository übertragen. Dadurch werden Änderungen für andere verfügbar gemacht.
 
-	- git push --set-upstream origing *branch*
-		verknüpft zusätzlich den lokalen Branch mit einem Remote-Branch. Damit merkt sich Git das Ziel für 			zukünftige Push- und Pull-Befehle.
+	- git push --set-upstream origin (branch) verknüpft zusätzlich den lokalen Branch mit einem Remote-Branch. Damit merkt sich Git das Ziel für zukünftige Push- und Pull-Befehle.
 
 - __git fetch__
 
-	holt alle Änderungen aus dem Remote-Repository, ohne sie in deinen aktuellen Branch zu übernehmen. Es 	aktualisiert nur die Referenzen zu den entfernten Branches.
+	Bei git fetch werden alle Änderungen aus dem Remote-Repository geholt, ohne sie in deinen aktuellen Branch zu übernehmen. Es aktualisiert nur die Referenzen zu den entfernten Branches.
 
 - __git pull__
 	
-	holt Änderungen aus dem Remote-Repository und führt sie sofort mit deinem aktuellen lokalen Branch 	zusammen. Es ist eine Kombination aus git fetch und git merge.
+	Git pull holt Änderungen aus dem Remote-Repository und führt sie sofort mit deinem aktuellen lokalen Branch zusammen. Es ist eine Kombination aus git fetch und git merge.
