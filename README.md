@@ -111,3 +111,51 @@ VCS (Version Control Systems) sind Systeme die für die Erfassung und Aufzeichnu
 - __git pull__
 	
 	Git pull holt Änderungen aus dem Remote-Repository und führt sie sofort mit deinem aktuellen lokalen Branch zusammen. Es ist eine Kombination aus git fetch und git merge.
+
+
+
+# Bewertung des Repositories 'gitstarted-zusammenfassung-die-linke-ecke'
+
+## 1. Fachbegriffe
+- **Erreichte Punkte:** 3
+- **Begründung:** Die Fachbegriffe sind vollständig und korrekt erläutert. Es ist erkennbar, dass ihr eigene Erläuterungen formuliert habt. Der Begriff "Repository" ist beim Abschnitt zum Working Directory falsch verwendet. Das Repo ist die "Datenbank aller Versionen", während im Working Directory nur die aktuelle Version "gespiegelt" wird.
+
+## 2. Befehle – lokale Arbeit
+- **Erreichte Punkte:** 2
+- **Begründung:** Die Befehle zur lokalen Arbeit mit Git (z. B. `git init`, `git add`, `git commit`, `git merge`) sind korrekt und vollständig aufgeführt. 
+Die Formatierung ist übersichtlich und gut gegliedert, die Markdown-Struktur ist gut lesbar.
+Es fehlen tiefergehende Informationen, z.B. wie man das Verhalten bei git reset mit den Zusätzen (soft / mixed / hard) steuern kann und wann man was verwenden könnte, sowie typische Fehlermeldungen (z.B. bei Merge-Konflikten) und wie man mit diesen umgeht.
+
+## 3. Befehle – entfernte Arbeit
+- **Erreichte Punkte:** 3
+- **Begründung:** Die wichtigsten Befehle zur Arbeit mit Remote-Repositories (z. B. `git push`, `git pull`) sind vorhanden und korrekt erläutert. 
+Es fehlen typische Fehlermeldung und wie man mit diesen umgeht.
+
+## 4. Güte der Zusammenarbeit
+- **Erreichte Punkte:** 3
+- **Begründung:** Es gibt viele Commits, die regelmäßig erfolgt sind. Die Commit-Nachrichten sind aussagekräftig und nachvollziehbar. Es wurde mit Branches gearbeitet, der Haupt-Branch enthält (fast) nur Merge-Commits. 
+
+## Gesamtbewertung:
+| Kriterium               | Punkte |
+|------------------------|--------|
+| Fachbegriffe           | 3      |
+| Lokale Arbeit          | 2      |
+| Entfernte Arbeit       | 3      |
+| Zusammenarbeit         | 3      |
+| **Gesamt**             | **11/12** |
+
+--> **91% --> sehr gut (14 NP.)**
+
+---
+
+## Verbesserungsvorschläge
+
+
+### 2. Lokale Arbeit
+- Sehr gut! Ihr könntet noch typische Fehler erwähnen, z. B.:
+  - „Wenn du `git commit` ohne `-m` benutzt, öffnet sich ein Editor wie z.B. VIM – das kann verwirrend sein. Dem kann man vorbeugen, in dem man beim Installieren von git ...“
+- Vielleicht ein Mini-Tutorial oder eine Schritt-für-Schritt-Anleitung einbauen.
+
+### 3. Entfernte Arbeit
+- Ergänzt Hinweise wie:
+  - „Typischer Fehler: `git push` schlägt fehl, wenn du keine Schreibrechte hast.“
